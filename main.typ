@@ -14,6 +14,7 @@
     )]],
     align(alignment.right, link("https://linkedin.com/in/luisnquin/")[#underline[#text(
       weight: "semibold",
+      style: "italic",
       fill: blue,
       "/in/luisnquin"
     )]]),
