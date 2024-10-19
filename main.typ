@@ -25,6 +25,12 @@
       "github.com/luisnquin"
     )]])
   )
+
+  grid(
+    inset: 0.5em,
+    text("Software Developer with more than 4 years of experience in digital products, primarily in the Fintech and HR management sectors.") ,
+    text("My knowledge includes backend, frontend, mobile development, cloud-based environments, embedded systems, and operating systems.")
+  )
 }
 
 #text(font: "Roboto", size: 0.9em)[#document()]
