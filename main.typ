@@ -1,5 +1,5 @@
 
-
+#let blue = rgb("#1a58c4")
 
 #let document() = {
   text(size: 1.3em, weight: "semibold", "LUIS QUIÑONES REQUELME")
