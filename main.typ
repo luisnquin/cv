@@ -9,7 +9,7 @@
   ))] 
 }
 
-#let CompanyExperience(company, roles) = {
+#let CompanyExperience(company, description, roles) = {
   let Experiences() = {
     stack(
       dir: ttb,
@@ -24,8 +24,14 @@
 
   stack(
     spacing: 0.8em,
-    underline(offset: 0.18em, stroke: 1.1pt, text(weight: "medium", size: 1.12em, company)),
-    Experiences(),
+    stack(
+      spacing: 1.1em,
+      underline(offset: 0.18em, stroke: 1.1pt, text(weight: "medium", size: 1.12em, company)),
+      if description.len() > 0 {
+        text(size: 0.9em, description)
+      }  
+    ),
+    Experiences()
   )
 }
 
@@ -50,7 +56,7 @@
       dir: ttb,
       spacing: 2em,
       text(size: 1.3em, weight: "semibold", "PROFESSIONAL CAREER:"),
-      CompanyExperience("Chanchita", (
+      CompanyExperience("Chanchita", "", (
         (
           title: "Senior Backend Developer",
           range: "Oct 2024 - present"
@@ -60,19 +66,19 @@
           range: "May 2024 - Oct 2024"
         )
       )),
-      CompanyExperience("Qompa", (
+      CompanyExperience("Qompa", "Building the first LATAM neobank for SMEs, empowering them with AI-driven financial solutions. We provide data-backed insights, user-friendly tools with gamification and tailored products to help businesses growth.", (
         (
           title: "CTO/Co-Founder",
           range: "Jul 2024 - present"
         ),
       )),  
-      CompanyExperience("Inversiones.io", (
+      CompanyExperience("Inversiones.io", "", (
         (
           title: "Site Reliability Engineer",
           range: "Jan 2024 - Oct 2024"
         ),
       )),
-      CompanyExperience("WiserSKILLS - NEOBRAIN", (
+      CompanyExperience("WiserSKILLS - NEOBRAIN", "", (
         (
           title: "Full-Stack Developer",
           range: "Jun 2023 - Jan 2024"
@@ -82,7 +88,7 @@
           range: "Feb 2022 - Jun 2023"
         )
       )),
-      CompanyExperience("Desstorm", (
+      CompanyExperience("Desstorm", "", (
         (
           title: "Web Developer",
           range: "Oct 2021 - Dec 2021"
