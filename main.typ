@@ -23,7 +23,7 @@
   }
 
   stack(
-    spacing: 1em,
+    spacing: 0.8em,
     underline(offset: 0.18em, stroke: 1.1pt, text(weight: "medium", size: 1.20em, company)),
     Experiences(),
   )
@@ -50,7 +50,7 @@
     ),
     stack(
       dir: ttb,
-      spacing: 1em,
+      spacing: 2em,
       text(size: 1.3em, weight: "semibold", "PROFESSIONAL CAREER:"),
       CompanyExperience("Chanchita", (
         (
