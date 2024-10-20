@@ -43,10 +43,8 @@
       "+51 912052391 / +503 72095581",
       align(alignment.right, HeaderLink("github.com/luisnquin","https://github.com/luisnquin"))
     ),
-    grid(
-      gutter: 0.5em,
-      text("Software Developer with more than 4 years of experience in digital products, primarily in the Fintech and HR management sectors.") ,
-      text("My knowledge includes backend, frontend, mobile development, cloud-based environments, embedded systems, and operating systems.")
+    stack(
+      text("Software Developer with more than 4 years of experience in digital products, primarily in the Fintech and HR management sectors. My knowledge includes backend, frontend, mobile development, cloud-based environments, embedded systems, and operating systems.") ,
     ),
     stack(
       dir: ttb,
