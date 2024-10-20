@@ -16,7 +16,7 @@
       spacing: 0.2em,
       for role in roles {
         grid(
-          text(style: "italic", size: 0.9em, role.title + " (" + role.range + ")")
+          text(style: "italic", size: 0.95em, role.title + " (" + role.range + ")")
         )
       }
     )
