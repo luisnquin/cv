@@ -1,6 +1,13 @@
 
 #let blue = rgb("#1a58c4")
 
+#let HeaderLink(label, url) = {
+ link(url)[#underline(offset: 0.15em, stroke: 1.05pt, text(
+    weight: "semibold",
+    fill: blue,
+    label
+  ))] 
+}
 
 #let CareerItem(role, company, date) = {
   grid(
@@ -16,22 +23,10 @@
   grid(
     columns: (1fr, 1fr),
     inset: 0.5em,
-    link("mailto:luis@quinones.pro")[#underline[#text(
-      weight: "semibold",
-      fill: blue,
-      "luis@quinones.pro"
-    )]],
-    align(alignment.right, link("https://linkedin.com/in/luisnquin/")[#underline[#text(
-      weight: "semibold",
-      fill: blue,
-      "/in/luisnquin"
-    )]]),
+    HeaderLink("luis@quinones.pro", "mailto:luis@quinones.pro"),
+    align(alignment.right, HeaderLink("/in/luisnquin","https://linkedin.com/in/luisnquin/")),
     "+51 912052391 / +503 72095581",
-    align(alignment.right, link("https://github.com/luisnquin")[#underline[#text(
-      weight: "semibold",
-      fill: blue,
-      "github.com/luisnquin"
-    )]])
+    align(alignment.right, HeaderLink("github.com/luisnquin","https://github.com/luisnquin"))
   )
 
   grid(
