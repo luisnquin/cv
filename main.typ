@@ -24,7 +24,7 @@
 
   stack(
     spacing: 0.8em,
-    underline(offset: 0.18em, stroke: 1.1pt, text(weight: "medium", size: 1.20em, company)),
+    underline(offset: 0.18em, stroke: 1.1pt, text(weight: "medium", size: 1.12em, company)),
     Experiences(),
   )
 }
